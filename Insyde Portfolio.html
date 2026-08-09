@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Insyde Creative</title>
+<link rel="icon" type="image/png" href="Img/Insyde Primary.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Insyde Css.css">
+</head>
+<body class="page-portfolio">
+
+<nav class="nav" id="nav">
+  <a href="Insyde Home.html" class="nav__logo"><img src="Img/Insyde Logo.png"> </a>
+  <div class="nav__links">
+    <a href="Insyde Home.html">Home</a>
+    <a href="Insyde Portfolio.html"  class="is-current">Portfolio</a>
+    <a href="Insyde Service.html">Services</a>
+    <a href="Insyde About.html">About</a>
+    <a href="Insyde Contact.html">Contact</a>
+  </div>
+  <div class="nav__cta">
+    <a href="Insyde Collaboration.html" class="btn btn--outline" style="padding:0.6rem 1.3rem; font-size:0.85rem;">Collaboration</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="Insyde Home.html">Home</a>
+  <a href="Insyde Portfolio.html">Portfolio</a>
+  <a href="Insyde Service.html">Services</a>
+  <a href="Insyde About.html">About</a>
+  <a href="Insyde Contact.html">Contact</a>
+  <a href="Insyde Collaboration.html">Collaboration</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="hero__media">
+    <img src="https://picsum.photos/seed/insyde-portfolio-hero/1600/1000" alt="">
+  </div>
+  <div class="hero__wash"></div>
+  <div class="hero__scanline"></div>
+  <div class="hero__content">
+    <span class="eyebrow">Portfolio</span>
+    <h1 class="hero__tagline">Our Portfolio</h1>
+    <p class="hero__sub">[Placeholder — replace with a short intro line about the range of work shown below.]</p>
+  </div>
+</header>
+
+<!-- ============ PORTFOLIO GRID ============ -->
+<section class="section" id="work">
+  <div class="grid-texture"></div>
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:2rem;">
+      <span class="eyebrow">Selected work</span>
+      <h2>Browse by category</h2>
+    </div>
+
+    <div class="filter-tabs reveal" id="filterTabs">
+      <button class="filter-tab is-active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="Commercial Photography">Commercial Photography</button>
+      <button class="filter-tab" data-filter="Video Production">Video Production</button>
+      <button class="filter-tab" data-filter="Corporate">Corporate</button>
+      <button class="filter-tab" data-filter="Event Coverage">Event Coverage</button>
+      <button class="filter-tab" data-filter="Social Media">Social Media</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+      <a href="#" class="portfolio-item reveal" data-category="Commercial Photography">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-commercial1/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 1]</h3></div>
+      </a>
+
+      <a href="#" class="portfolio-item reveal" data-category="Video Production" data-youtube="LmEgeEc-wwM">
+        <div class="portfolio-item__img">
+          <img src="https://picsum.photos/seed/insyde-pf-corporate1/600/450" alt="">
+          <div class="portfolio-item__play"><span>&#9658;</span></div>
+        </div>
+        <div class="portfolio-item__cap"><h3>[Client Name 2]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Video Production" data-youtube="LmEgeEc-wwM">
+        <div class="portfolio-item__img">
+          <img src="https://picsum.photos/seed/insyde-pf-corporate1/600/450" alt="">
+          <div class="portfolio-item__play"><span>&#9658;</span></div>
+        </div>
+        <div class="portfolio-item__cap"><h3>[Client Name 2]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Corporate">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-social1/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 3]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Event Coverage">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-event1/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 4]</h3></div>
+      </a>
+       <a href="#" class="portfolio-item reveal" data-category="Social Media">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-commercial1/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 1]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Commercial Photography">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-commercial2/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 5]</h3></div>
+      </a>
+      <!-- Video Production item — clicking opens a YouTube lightbox. Replace data-youtube with the real video ID. -->
+      <a href="#" class="portfolio-item reveal" data-category="Video Production" data-youtube="LmEgeEc-wwM">
+        <div class="portfolio-item__img">
+          <img src="https://picsum.photos/seed/insyde-pf-corporate2/600/450" alt="">
+          <div class="portfolio-item__play"><span>&#9658;</span></div>
+        </div>
+        <div class="portfolio-item__cap"><h3>[Client Name 6]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Corporate">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-social2/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 7]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Event Coverage">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-event2/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 8]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Social Media">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-commercial1/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 1]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Commercial Photography">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-commercial3/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 9]</h3></div>
+      </a>
+      <!-- Video Production item — clicking opens a YouTube lightbox. Replace data-youtube with the real video ID. -->
+      <a href="#" class="portfolio-item reveal" data-category="Video Production" data-youtube="LmEgeEc-wwM">
+        <div class="portfolio-item__img">
+          <img src="https://picsum.photos/seed/insyde-pf-corporate3/600/450" alt="">
+          <div class="portfolio-item__play"><span>&#9658;</span></div>
+        </div>
+        <div class="portfolio-item__cap"><h3>[Client Name 10]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Corporate">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-social3/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 11]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Event Coverage">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-event3/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 12]</h3></div>
+      </a>
+      <a href="#" class="portfolio-item reveal" data-category="Social Media">
+        <div class="portfolio-item__img"><img src="https://picsum.photos/seed/insyde-pf-commercial1/600/450" alt=""></div>
+        <div class="portfolio-item__cap"><h3>[Client Name 1]</h3></div>
+      </a>
+    </div>
+
+    <div class="portfolio-more reveal" id="portfolioMore">
+      <button class="btn btn--primary" id="loadMoreBtn">Load more</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div class="video-modal" id="videoModal">
+  <div class="video-modal__frame">
+    <button class="video-modal__close" id="videoModalClose">Close &#10005;</button>
+    <iframe id="videoModalIframe" src="" title="Video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo"><img src="Img/Insyde Logo.png"> </a>
+        <p>Think inside, build insight. A creative agency in Penang, Malaysia.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="Insyde Home.html">Home</a></li>
+            <li><a href="Insyde Portfolio.html">Portfolio</a></li>
+            <li><a href="Insyde Service.html">Services</a></li>
+            <li><a href="Insyde About.html">About</a></li>
+            <li><a href="Insyde Collaboration.html">Collaboration</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>Copyright © 2026 Insyde Creative. All rights reserved.</span>
+      <span>Penang, Malaysia</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // nav background on scroll (kept for the shrink-padding effect; background is always on for inner pages)
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('is-scrolled', window.scrollY > 40);
+  });
+
+  // mobile menu toggle
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => menu.classList.toggle('is-open'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('is-open')));
+
+  // portfolio category filter + load more
+  (function(){
+    const tabs = document.querySelectorAll('#filterTabs .filter-tab');
+    const items = Array.from(document.querySelectorAll('#portfolioGrid .portfolio-item'));
+    const moreWrap = document.getElementById('portfolioMore');
+    const moreBtn = document.getElementById('loadMoreBtn');
+    if(!tabs.length) return;
+
+    const PAGE_SIZE = 6;
+    let currentFilter = 'all';
+    let visibleCount = PAGE_SIZE;
+
+    function currentSet(){
+      return items.filter(item => currentFilter === 'all' || item.dataset.category === currentFilter);
+    }
+
+    function render(){
+      const set = currentSet();
+      items.forEach(item => item.classList.add('is-hidden'));
+      set.slice(0, visibleCount).forEach(item => item.classList.remove('is-hidden'));
+      moreWrap.classList.toggle('is-hidden', visibleCount >= set.length);
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+        currentFilter = tab.dataset.filter;
+        visibleCount = PAGE_SIZE;
+        render();
+      });
+    });
+
+    moreBtn.addEventListener('click', () => {
+      visibleCount += PAGE_SIZE;
+      render();
+    });
+
+    render();
+  })();
+
+  // YouTube video lightbox — any portfolio item with a data-youtube attribute
+  (function(){
+    const modal = document.getElementById('videoModal');
+    const iframe = document.getElementById('videoModalIframe');
+    const closeBtn = document.getElementById('videoModalClose');
+    const videoItems = document.querySelectorAll('.portfolio-item[data-youtube]');
+
+    function openModal(videoId){
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+      modal.classList.add('is-open');
+    }
+    function closeModal(){
+      modal.classList.remove('is-open');
+      iframe.src = '';
+    }
+
+    videoItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal(item.dataset.youtube);
+      });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+  })();
+
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

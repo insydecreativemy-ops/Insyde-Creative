@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Insyde Creative</title>
+<link rel="icon" type="image/png" href="Img/Insyde Primary.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Insyde Css.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="Insyde Home.html" class="nav__logo"><img src="Img/Insyde Logo.png"> </a>
+  <div class="nav__links">
+    <a href="Insyde Home.html">Home</a>
+    <a href="Insyde Portfolio.html">Portfolio</a>
+    <a href="Insyde Service.html">Services</a>
+    <a href="Insyde About.html">About</a>
+    <a href="Insyde Contact.html" class="is-current">Contact</a>
+  </div>
+  <div class="nav__cta">
+    <a href="Insyde Collaboration.html" class="btn btn--outline" style="padding:0.6rem 1.3rem; font-size:0.85rem;">Collaboration</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="Insyde Home.html">Home</a>
+  <a href="Insyde Portfolio.html">Portfolio</a>
+  <a href="Insyde Service.html">Services</a>
+  <a href="Insyde About.html">About</a>
+  <a href="Insyde Contact.html">Contact</a>
+  <a href="Insyde Collaboration.html">Collaboration</a>
+</div>
+
+<!-- ============ HERO: MAP (same size as Home hero) ============ -->
+<header class="contact-hero">
+  <div class="contact-hero__map">
+    <iframe src="https://maps.google.com/maps?q=18%2C%20Jalan%20Tan%20Iu%20Ghee%2C%20Taman%20Free%20School%2C%2010460%20George%20Town%2C%20Pulau%20Pinang&t=&z=16&ie=UTF8&output=embed" loading="lazy" title="Studio location"></iframe>
+  </div>
+  <div class="contact-hero__fade"></div>
+  <div class="contact-hero__card">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Let's talk about your brand</h1>
+    <p>Tell us a bit about what you're working on, or just say hello — we usually reply within a day or two.</p>
+    <div class="contact-hero__actions">
+      <a href="#form" class="btn btn--solid">Send a message</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=18+Jalan+Tan+Iu+Ghee+Taman+Free+School+10460+George+Town+Pulau+Pinang" target="_blank" rel="noopener" class="maps-link">Open in Google Maps →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ INFO + FORM ============ -->
+<section class="contact-body">
+
+<div class="grid-texture"></div>
+
+  <div class="info-card reveal">
+    <span class="eyebrow" style="opacity:0.55;">Visit or write</span>
+    <h2>Find us here</h2>
+    <p>Prefer to reach out directly? Here's how.</p>
+    <div class="info-block">
+      <h3>Headquaters Office</h3>
+      <p>18, Jalan Tan Iu Ghee, Taman Free School,<br>10460 George Town, Pulau Pinang</p>
+    </div>
+    <div class="info-block">
+      <h3>Central Regional Office</h3>
+      <p>Block F-03, Mutiara Ville, Persiaran Bestari, Cyber 11,<br>63000 Cyberjaya, Selangor Darul Ehsan</p>
+    </div>
+    <div class="info-block">
+      <h3>Business hours</h3>
+      <p>Mon–Sat, 10:00 AM – 6:00 PM</p>
+    </div>
+    <div class="info-block">
+      <h3>Email</h3>
+      <a href="mailto:insydecreative.my@gmail.com">insydecreative.my@gmail.com</a>
+    </div>
+    <div class="info-block">
+      <h3>WhatsApp</h3>
+      <a href="https://wa.me/60176550560" class="btn btn--primary-outline" style="margin-top:0.4rem; padding:0.7rem 1.4rem; font-size:0.85rem;">Chat on WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="contact-form-side" id="form">
+    <span class="eyebrow" style="opacity:0.55;">Send a message</span>
+    <h2>Start the conversation</h2>
+    <p>Fill this in and we'll get back to you — no obligation, no pressure.</p>
+
+    <form id="contactForm" action="https://formspree.io/f/xqpzevra" method="post">
+      <div class="field-row">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="contact">Email</label>
+          <input type="email" id="contact" name="contact" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="service">What do you need?</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="Commercial Photography">Commercial Photography</option>
+          <option value="Video Production">Video Production</option>
+          <option value="Corporate">Corporate</option>
+          <option value="Event Coverage">Event Coverage</option>
+          <option value="Social Media">Social Media Content</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="date">Preferred date (if applicable)</label>
+        <input type="date" id="date" name="date">
+      </div>
+
+      <div class="field">
+        <label for="message">Tell us more</label>
+        <textarea id="message" name="message" placeholder="What's the project? Any dates, locations or references that matter."></textarea>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="btn btn--primary">Send message</button>
+      </div>
+    </form>
+  </div>
+
+</section>
+
+<!-- ============ FOOTER (same as Home) ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo"><img src="Img/Insyde Logo.png" alt="Insyde Creative"></a>
+        <p>Think inside, build insight. A creative agency in Penang, Malaysia.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="Insyde Home.html">Home</a></li>
+            <li><a href="Insyde Portfolio.html">Portfolio</a></li>
+            <li><a href="Insyde Service.html">Services</a></li>
+            <li><a href="Insyde About.html">About</a></li>
+            <li><a href="Insyde Collaboration.html">Collaboration</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="https://wa.me/60000000000">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>Copyright © 2026 Insyde Creative. All rights reserved.</span>
+      <span>Penang, Malaysia</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // nav background on scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('is-scrolled', window.scrollY > 40);
+  });
+
+  // mobile menu toggle
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => menu.classList.toggle('is-open'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('is-open')));
+
+  // scroll reveal
+  const revealEls=document.querySelectorAll(
+
+'.reveal,.slide-left,.slide-right,.zoom'
+
+);
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
